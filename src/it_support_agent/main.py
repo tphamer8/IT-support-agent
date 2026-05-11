@@ -1,4 +1,4 @@
-from classifier import IntentClassifier
+from it_support_agent.classifier import IntentClassifier
 
 def main() -> None:
     print("IT Support Agent")
