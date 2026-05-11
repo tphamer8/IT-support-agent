@@ -1,3 +1,5 @@
+from classifier import IntentClassifier
+
 def main() -> None:
     print("IT Support Agent")
     print("Type 'exit' or 'quit' to end the session")
@@ -16,7 +18,11 @@ def main() -> None:
             print("Agent: Please enter a support question.")
             continue
 
-        print("Agent: I received your question. Intent routing will be added next.")
+        # Find intent
+        classifier = IntentClassifier()
+        user_intent = IntentClassifier.classify(classifier, user_input)
+
+        print("Agent: I received your question. Intent:", user_intent)
 
 if __name__ == "__main__":
     main()
