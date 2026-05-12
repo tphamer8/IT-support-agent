@@ -7,6 +7,7 @@
       "langchain",
       "langchain-ollama",
       "langchain-community",
+      "langchain-text-splitters",
       "chromadb",
       "python-dotenv",
   ]
